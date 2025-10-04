@@ -24,8 +24,8 @@ def lambda_handler(event, context):
 
     # Uložit do S3
     s3 = boto3.client("s3")
-    bucket_name = "autocaris-data"  # změň na svůj bucket
-    s3_key = "inzeraty/inzeraty_usti.xml"
+    bucket_name = ""  # změň na svůj bucket
+    s3_key = ""
 
     s3.put_object(
         Bucket=bucket_name,
